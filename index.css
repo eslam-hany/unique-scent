@@ -1,0 +1,141 @@
+*{
+    --main-color:#e2ac7a;
+    --secound-color:#EADDCA;
+    --main-transition:0.5s;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+body{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   background-color: whitesmoke;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index:1;
+  top: 0;
+  display: flex;
+  margin-bottom: 150px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: var(--main-color);
+  color: var(--secound-color);
+}
+
+.navbar a{
+ font-size: 20px;
+ font-weight: bold;
+ text-transform: capitalize;
+ letter-spacing: 2.7px;
+ color: var(--secound-color);
+}
+.navbar .add{
+ background-color: var(--secound-color);
+ color: var(--main-color);
+ padding:5px 10px;
+ border-radius: 5px;
+ margin-right: 50px;
+ transition: var(--main-transition);
+ 
+}
+.navbar .add:hover{
+  opacity: 0.9;
+  transform: scale(1.1);
+  transition: var(--main-transition);
+}
+.container{
+    display: inline-block;
+   
+ }
+.main{
+ 
+    padding: 20px 0;
+    margin-left: 40%;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap: 20px;
+    
+}
+.box {
+  width: 230px;
+  position: relative;
+  height: 280px;
+  padding-bottom: 20px;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 260px;
+}
+.box:hover {
+  box-shadow: 5px 5px 5px 5px #212121;
+  transition: all 0.5s;
+}
+
+.box .info {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secound-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: block;
+  padding-left: 10px;
+  text-transform: capitalize;
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.box .info button{
+    width: 90%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #E5AA70;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: .4s ease-in-out opacity,.1s ease-in-out active;
+    padding: 1em;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+ 
+.box .info button:hover {
+    opacity: 0.8;
+  }
+  
+  .box .info button:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: none;
+  }
+.box:hover .info {
+  content: "information";
+  height: 50%;
+}
+   
+   
+  

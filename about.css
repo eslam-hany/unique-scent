@@ -1,0 +1,135 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #EADDCA;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    height: 20vh;
+    width: 100%;
+    z-index: 1;
+    background-color: #EADDCA;
+  }
+
+  header img{
+    height: 100%;
+  }
+  .container {
+    max-width: 80%;
+    margin:  auto;
+    padding: 20px;
+    margin-top: 150px;
+  }
+  
+  .achievements{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    border: 3px dashed #e2ac7a;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 70px auto;
+    flex-wrap: wrap;
+}
+
+.achievements .goals img{
+  height: 50px;
+  width: 50px;
+}
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.title-branch{
+ margin-left: 10%; 
+}
+.branch{
+ display: grid;
+ grid-template-columns: auto auto;
+ gap: 10px;
+ margin: 100px 0;
+}
+
+.locations{
+   height: 450px;
+   overflow-x: hidden;    
+}
+
+.locations::-webkit-scrollbar {
+  display: none;
+}
+.locations .location{
+  padding-left: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b6b1b1;
+}
+.connect{
+  text-align: center;
+}
+
+.connect a{
+  text-decoration: none;
+  padding: 10px 25px;
+  background-color: transparent;
+  font-size: 18px;
+  letter-spacing: 1.7px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: #e2ac7a;
+  border: 1px solid #e2ac7a;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+}
+.connect a:hover{
+  background-color: #e2ac7a;
+  color: #EADDCA;
+  transition: all 0.5s;
+}
+.map{
+  max-width: 100%;
+}
+ 
+
+
+@media screen and (max-width: 661px) {
+  body{
+    max-width: 100%;
+  }
+  .container {
+      width: 100%;
+      padding: 150px;
+  }
+  
+  .achievements {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  .branch {
+    grid-template-columns: 1fr;
+    gap: 10%;
+    margin: 20% 0;
+  }
+  .locations{
+    max-width: 100%;
+     height: 100%;
+         
+  }
+  .locations {
+    height: 80px;
+  }
+}
